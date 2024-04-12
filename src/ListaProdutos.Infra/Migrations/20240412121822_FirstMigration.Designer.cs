@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ListaProdutos.Infra.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240409224728_FirstMigration")]
+    [Migration("20240412121822_FirstMigration")]
     partial class FirstMigration
     {
         /// <inheritdoc />

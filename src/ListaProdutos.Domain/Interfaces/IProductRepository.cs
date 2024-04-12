@@ -1,4 +1,5 @@
-﻿using ListaProdutos.Domain.Model;
+﻿using ListaProdutos.Domain.DTO;
+using ListaProdutos.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace ListaProdutos.Domain.Interfaces
 {
     public interface IProductRepository
     {
-        Task<IEnumerable<Product>> GetProducts();
-        Task<Product> GetProductById(Guid id);
-        Task<Product> CreateProduct(Product product);
-        Task<Product> UpdateProduct(Product product);
-        Task<Product> DeleteProduct(Guid id);
+        Task<IEnumerable<ProductDTO>> Get();
+        Task<ProductDTO> GetById(Guid id); 
+        Task<bool> Create(ProductDTO product);
+        Task<bool> Update(ProductDTO product);
+        Task<bool> Delete(Guid id);
     }
 }
