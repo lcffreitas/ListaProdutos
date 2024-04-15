@@ -12,7 +12,7 @@ namespace ListaProdutos.Domain.Interfaces
     {
         Task<IEnumerable<ProductDTO>> Get();
         Task<ProductDTO> GetById(Guid id); 
-        Task<bool> Create(ProductDTO product);
+        Task<bool> Add(ProductDTO product);
         Task<bool> Update(ProductDTO product);
         Task<bool> Delete(Guid id);
     }
